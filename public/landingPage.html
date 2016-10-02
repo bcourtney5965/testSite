@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LandingPage</title>
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <button><a href="http://localhost:3000/landingPage">Go To Landing Page</a></button>
+  <button><a href="http://localhost:3000/thankYouPage">Go To Thank You Page</a></button>
+  <hr>
+  <h1>Landing Page</h1>
+  <h3>please buy our product</h3>
+
+  <button onclick="test()">Buy Now!</button>
+  <button onclick="hasJQuery()">Add content</button>
+  <div>
+    <p>this is a p tag</p>
+  </div>
+
+  <script>
+    var test = function() {
+      console.log('this works!')
+    }
+    var hasJQuery = function() {
+      $('div').append("<p>You have jQuery!</p>");
+    }
+  </script>
+</body>
+</html>
