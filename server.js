@@ -8,7 +8,7 @@ var port = process.env.PORT || 3000;
 var public = './public/';
 
 // routes to serve the static HTML files individually
-app.get('/landingPage', function(req, res) {
+app.get('/', function(req, res) {
     res.sendfile(public + 'landingPage.html');
 });
 app.get('/thankYouPage', function(req, res) {
